@@ -1,0 +1,31 @@
+header {
+  padding: .5rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.align {
+  display: flex;
+  align-items: center;
+}
+
+.align h1 {
+  margin-left: 5px;
+}
+
+svg {
+  width: 80px;
+}
+
+a {
+  display: block;
+  color: var(--primaryColor)
+}
+
+nav>div>a>button:first-child {
+  margin-right: 1rem
+}

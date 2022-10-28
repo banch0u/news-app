@@ -17,7 +17,7 @@ const App = () => {
               <>
                 <Header />
                 <item.component />
-                <Footer />
+                {/* <Footer /> */}
               </>
             }
           />

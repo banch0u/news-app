@@ -1,4 +1,5 @@
 import Home from "./pages/home";
+import Login from "./pages/login";
 
 function routeItem(id, title, path, component) {
   return {
@@ -10,6 +11,8 @@ function routeItem(id, title, path, component) {
 };
 const routes = {
   home: routeItem(1, 'home', "/", Home),
+  login: routeItem(2, 'login', "/login", Login),
+
 
 };
 

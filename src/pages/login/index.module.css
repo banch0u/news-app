@@ -1,0 +1,39 @@
+.wrap {
+  width: 35%;
+  margin: auto;
+}
+
+.card {
+  border: 1px solid var(--primaryColor);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  border-radius: .5rem;
+  color: var(--primaryColor);
+}
+
+.card input {
+  font-size: 1.2rem;
+  margin-bottom: .75rem;
+  border: .5px solid var(--primaryColor);
+  border-radius: .5rem;
+  color: var(--primaryColor);
+  padding: .25rem;
+}
+
+form>div {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.wrap>h1 {
+  text-align: center;
+  color: var(--primaryColor);
+}
+
+.wrap>a {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: black;
+}

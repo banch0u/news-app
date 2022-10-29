@@ -1,5 +1,6 @@
 import Title from "../../components/layout/title";
 import Wrapper from "../../components/UI/wrapper";
+import AppleNews from "../appleNews";
 
 import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 
@@ -22,7 +23,7 @@ const Home = () => {
             <h2>hello</h2>
           </TabPanel>
           <TabPanel>
-            <h2>there</h2>
+            <AppleNews />
           </TabPanel>
           <TabPanel>
             <h2>friend</h2>

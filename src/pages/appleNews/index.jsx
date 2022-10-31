@@ -6,11 +6,10 @@ import Loading from "../../components/UI/loading";
 const AppleNews = () => {
   const [news, setNews] = useState([]);
   const [load, setLoad] = useState(false);
-  console.log(news.articles);
   useEffect(() => {
     const getData = async () => {
       const { data } = await AppleService.getAppleNews();
-      await setNews(data);
+      await setNews(data.articles);
       await setLoad(true);
     };
     getData();
@@ -18,7 +17,7 @@ const AppleNews = () => {
 
   return load ? (
     <div>
-      {news?.articles?.map((item, index) => {
+      {news?.map((item, index) => {
         return (
           <AppleNewsCard
             key={index}
@@ -33,6 +32,17 @@ const AppleNews = () => {
           />
         );
       })}
+      {/* <AppleNewsCard
+        // key={index}
+        author={news[0].author}
+        source={news[0].source.name}
+        title={news[0].title}
+        description={news[0].description}
+        sourceUrl={news[0].url}
+        image={news[0].urlToImage}
+        publishDate={news[0].publishedAt}
+        content={news[0].content}
+      /> */}
     </div>
   ) : (
     <Loading />

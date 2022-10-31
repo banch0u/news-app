@@ -1,0 +1,32 @@
+.container {
+  border: solid .5px rgb(222, 222, 222);
+  display: flex;
+  /* align-items: center; */
+  padding: 1rem;
+  border-radius: 1rem;
+  margin: 1rem 0;
+}
+
+
+.image-col>img {
+  /* width: 100%; */
+  display: block;
+  width: 370px;
+  height: 208px;
+  /* object-fit: cover; */
+  border-radius: 1rem;
+}
+
+.text-col {
+  padding: 1rem;
+  width: 100%;
+}
+
+.date-n-source {
+  display: flex;
+  justify-content: space-between;
+}
+
+.date {
+  color: rgb(144, 144, 144);
+}

@@ -1,13 +1,21 @@
 import { useState, useEffect } from "react";
 
-const AppleNewsCard = ({ data }) => {
-  const [news, setNews] = useState({});
-  useEffect(() => {
-    setNews(data);
-  }, [data]);
+const AppleNewsCard = ({
+  author,
+  source,
+  title,
+  description,
+  sourceUrl,
+  image,
+  publishDate,
+  content,
+}) => {
   return (
     <div>
-      <h1></h1>
+      <div>
+        {/* <img src={image} alt="" /> */}
+        <div>{author ? author : "fuck you"}</div>
+      </div>
     </div>
   );
 };
